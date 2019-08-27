@@ -69,11 +69,11 @@
                     android:id="@+id/parent_linear_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="@dimen/appbar_padding_top"
                     android:orientation="vertical">
 
-            <TableRow
+            <LinearLayout
                       android:id="@+id/tblCaption"
+                      android:orientation="horizontal"
                       android:layout_width="match_parent"
                       android:layout_height="35dp"
                       android:background="@drawable/border_fill" >
@@ -118,9 +118,11 @@
                         android:layout_weight="0.20"
                         android:gravity="center"
                         android:textSize="18sp" />
-                </TableRow>
-                <TableRow android:layout_width="match_parent"
-                          android:layout_height="35dp">
+                </LinearLayout>
+                <LinearLayout
+                         android:layout_width="match_parent"
+                          android:layout_height="35dp"
+                         android:orientation="horizontal">
 
                     <Spinner
                             android:id="@+id/type_spinner_size"
@@ -176,7 +178,7 @@
 
                            />
 
-                </TableRow>
+                </LinearLayout>
 
                 <Button
                         android:id="@+id/add_field_button"

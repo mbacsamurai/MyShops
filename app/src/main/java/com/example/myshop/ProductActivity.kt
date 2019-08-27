@@ -4,11 +4,12 @@ import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_product.*
+
+
 
 
 class ProductActivity : AppCompatActivity() {
@@ -20,14 +21,7 @@ class ProductActivity : AppCompatActivity() {
         setContentView(R.layout.activity_product)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-
          parentLinearLayout = findViewById(R.id.parent_linear_layout)
-
-
 
     }
    fun onAddField(v: View) {
@@ -36,7 +30,7 @@ class ProductActivity : AppCompatActivity() {
        parentLinearLayout?.addView(rowView, parentLinearLayout?.childCount!! - 1)
    }
     fun onDeleteField(v:View){
-        parentLinearLayout?.removeView((v as LinearLayout).focusedChild)
+        parentLinearLayout?.removeView(v.parent as View)
     }
 
 
