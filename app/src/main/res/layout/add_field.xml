@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="35dp">
+
+        <Spinner
+                android:id="@+id/type_spinner_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/types"
+                android:layout_weight="0.25"
+                android:padding="5dp"
+                android:spinnerMode="dialog"
+                android:gravity="center" />
+        <EditText
+                android:id="@+id/txtCost"
+                android:hint="ต้นทุน"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:background="@null"
+                android:textSize="18sp"/>
+        <EditText
+                android:id="@+id/txtPrice"
+                android:hint="ราคา"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:background="@null"
+                android:textSize="18sp" />
+        <EditText
+                android:id="@+id/txtQty"
+                android:hint="จำนวน"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@null"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:textSize="18sp" />
+        <Button
+                android:id="@+id/delete_button"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.20"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                android:onClick="onDeleteField"
+                android:text="Del"
+
+        />
+
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.5">
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnProduct"
+                            android:background="@android:color/transparent"
+                            android:text="Product"
+                            android:textSize="18sp"
+                            android:gravity="center|bottom"
+                            android:singleLine="false"
+                            android:paddingBottom="10dp"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_click_and_collect_100px"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnOrder"
+                            android:background="@android:color/transparent"
+                            android:text="Order"
+                            android:textSize="18sp"
+                            android:gravity="center|bottom"
+                            android:singleLine="false"
+                            android:paddingBottom="10dp" />
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_purchase_order_100px"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.5">
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnPay"
+                            android:background="@android:color/transparent"
+                            android:text="Pay"
+                            android:textSize="18sp"
+                            android:gravity="center|bottom"
+                            android:paddingBottom="10dp"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_cash_in_hand_100px"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnShip"
+                            android:background="@android:color/transparent"
+                            android:text="Shipment"
+                            android:textSize="18sp"
+                            android:gravity="center|bottom"
+                            android:paddingBottom="10dp" />
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_delivery_100px"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.5">
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnFind"
+                            android:background="@android:color/transparent"
+                            android:text="FIND"
+                            android:textSize="18sp"
+                            android:gravity="center|bottom"
+                            android:paddingBottom="10dp" />
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_search_100px"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnReport"
+                            android:background="@android:color/transparent"
+                            android:text="Report"
+                            android:textSize="18sp"
+                            android:gravity="center|bottom"
+                            android:paddingBottom="10dp" />
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_combo_chart_100px"
+                            android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
